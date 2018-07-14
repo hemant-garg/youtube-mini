@@ -1,0 +1,21 @@
+.main{
+	display: flex;
+	max-width: 120rem;
+	margin: 0 auto;
+	padding-top: 4rem;
+}
+@media screen and (max-width: 1250px){
+	.main{
+		padding: 4rem 3rem;
+	}
+}
+@media screen and (max-width: 650px){
+	.main{
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 500px){
+	.main{
+		padding: 4rem 1rem;
+	}		
+}

@@ -1,0 +1,14 @@
+.Nav{
+	display: flex;
+	height: auto;
+	justify-content: space-around;
+	padding-bottom: 2rem;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #666;
+	background-color: rgba(30, 39, 46,1.0);
+}
+@media screen and (max-width: 450px){
+	.Nav{
+		
+	}
+}

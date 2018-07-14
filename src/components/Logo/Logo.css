@@ -1,0 +1,22 @@
+.logo{
+    width: 14rem;
+    height: 7rem;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    filter: contrast(.7) brightness(1.1);
+}
+@media screen and (max-width: 1150px){
+	.logo{
+		padding-left: 0rem;
+	}
+}
+@media screen and (max-width: 950px){
+	.logo{
+		padding-left: 1rem;
+	}
+}
+@media screen and (max-width: 450px){
+	.log{
+		width: 100%;
+	}
+}

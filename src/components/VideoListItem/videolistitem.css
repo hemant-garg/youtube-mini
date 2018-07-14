@@ -1,0 +1,61 @@
+.videolistitem{
+	display: flex;
+	margin-bottom: 2rem;
+	overflow: hidden;
+	box-shadow: 0.3rem .3rem 2rem rgba(0,0,0,.5);
+	background-color: rgba(30, 39, 46, .9);
+	border-radius: 1rem;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+	cursor: pointer;
+}
+.videolistitem:hover{
+	background-color: rgba(30, 39, 46, 1);
+}
+.thumbnail{
+	width: 20rem;
+	height: 100%;
+}
+.video-title{
+	padding: 2rem 1rem ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 1.7rem;
+}
+.channel{
+	color: #bbb;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px){
+	.thumbnail{
+		width: 15rem;
+		height: 100%;
+	}
+}
+@media screen and (max-width: 1000px){
+	.thumbnail{
+		width: 100%;
+		height: 18rem;
+	}
+	.videolistitem{
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 650px){
+	.videolistitem{
+		width: 47%;
+	}
+}
+@media screen and (max-width: 400px){
+	.videolistitem{
+		width: 100%;
+	}
+	.video-title{
+		padding: 2rem ;
+	}		
+}

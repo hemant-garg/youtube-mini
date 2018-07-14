@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: rgba(179, 57, 57, .8);
+  color: #eee;
+}
+html{
+  font-size: 10px;
+}
+@media screen and (max-width: 800px){
+	body{
+		font-size: 1.4rem
+	}
+}
