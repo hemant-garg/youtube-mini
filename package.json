@@ -1,6 +1,7 @@
 {
   "name": "mini-youtube",
   "version": "0.1.0",
+  "homepage": "https://hemant-garg.github.io/youtube-mini",
   "private": true,
   "dependencies": {
     "gh-pages": "^1.2.0",
