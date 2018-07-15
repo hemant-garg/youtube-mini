@@ -16,11 +16,17 @@
 	background-color: rgba(30, 39, 46, 1);
 }
 .thumbnail{
-	width: 20rem;
+	width: 55%;
+	height: 17rem;
+	overflow: hidden;
+}
+.thumbnail img{
+	width: 100%;
 	height: 100%;
 }
 .video-title{
 	padding: 2rem 1rem ;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -33,14 +39,16 @@
 
 @media screen and (max-width: 1200px){
 	.thumbnail{
-		width: 15rem;
-		height: 100%;
+		width: 50%;
 	}
 }
 @media screen and (max-width: 1000px){
 	.thumbnail{
 		width: 100%;
-		height: 18rem;
+		/*height: 15rem;*/
+	}
+	.video-title{
+		width: 100%;
 	}
 	.videolistitem{
 		flex-direction: column;
@@ -53,9 +61,14 @@
 }
 @media screen and (max-width: 400px){
 	.videolistitem{
-		width: 100%;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.video-title{
 		padding: 2rem ;
 	}		
+	.thumbnail{
+		height: 20rem;
+	}
 }

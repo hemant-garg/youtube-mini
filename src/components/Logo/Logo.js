@@ -4,7 +4,7 @@ import './Logo.css';
 
 const Logo = () => {
     return (
-        <img src={logo} alt='youtube mini' className='logo'/>
+        <a href="https://hemant-garg.github.io/youtube-mini"><img src={logo} alt='youtube mini' className='logo'/></a>
     );
 }
 

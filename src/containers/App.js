@@ -20,7 +20,8 @@ class App extends Component {
 			videos: [],
 			selectedVideo: null
 		}
-		this.extractVideos('shape of you ed sheeran')
+		
+		this.extractVideos('')
 	}
 
 	extractVideos = (term) => {
@@ -28,13 +29,20 @@ class App extends Component {
 		 this.setState({videos: videos, selectedVideo: videos[0]}) 
 		});
 	}
+
 	onClickVideo = (video) => {
+		const mediaplayer = document.getElementById('mediaplayer')
+		if(window.screen.width < 650){
+			mediaplayer.style.display = 'inline-block';
+		}
+
 		this.setState({selectedVideo: video})
 	}
 
   render() {
-  	const videoSearch = _.debounce((term) => {this.extractVideos(term)}, 500);
+  	const videoSearch = _.debounce((term) => {this.extractVideos(term)}, 400);
   	const {videos, selectedVideo} = this.state;
+  	
     return (
       <div>
 	      <Nav>

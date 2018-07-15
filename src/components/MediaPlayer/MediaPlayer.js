@@ -1,12 +1,11 @@
 import React from 'react';
 import './mediaplayer.css';
 const MediaPlayer = ({video}) => {
-	
+
 	if(video){
-		console.log(video)
 		const URL = `https://www.youtube.com/embed/${video.id.videoId}`;
 		return (
-	        <div className='mediaplayer'>
+	        <div id='mediaplayer' className='mediaplayer'>
 	        	<iframe title='comedy' className='iframe'
 	        	 src={URL} 
 	        	 frameBorder="0" allow="autoplay; encrypted-media" 
