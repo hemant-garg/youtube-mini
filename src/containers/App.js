@@ -31,9 +31,14 @@ class App extends Component {
 	}
 
 	onClickVideo = (video) => {
-		const mediaplayer = document.getElementById('mediaplayer')
 		if(window.screen.width < 650){
+			const mediaplayer = document.getElementById('mediaplayer');
 			mediaplayer.style.display = 'inline-block';
+			window.scroll({
+			  top: 200, 
+			  left: 0, 
+			  behavior: 'smooth' 
+			});
 		}
 
 		this.setState({selectedVideo: video})
