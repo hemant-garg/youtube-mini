@@ -31,6 +31,8 @@ class App extends Component {
 	}
 
 	onClickVideo = (video) => {
+		
+		this.setState({selectedVideo: video})
 		if(window.screen.width < 650){
 			const mediaplayer = document.getElementById('mediaplayer');
 			mediaplayer.style.display = 'inline-block';
@@ -40,8 +42,6 @@ class App extends Component {
 			  behavior: 'smooth' 
 			});
 		}
-
-		this.setState({selectedVideo: video})
 	}
 
   render() {
