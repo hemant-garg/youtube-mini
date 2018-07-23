@@ -7,9 +7,9 @@
 	.videolist{
 		display: flex;
 		flex-wrap: wrap;
-		padding-right: .5rem;
+		padding-right: 0rem;
 		width: 100%;
-		padding-left: .5rem;
+		padding-left: 0rem;
 		justify-content: space-between;
 	}
 }
