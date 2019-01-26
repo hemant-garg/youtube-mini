@@ -1,2 +1,2 @@
 <h1>Youtube Mini </h1>
-<a href="https://hemant-garg.github.io/youtube-mini" target="_blank">Website</a>
+<a href="https://youtube-mini.netlify.com/" target="_blank">Website</a>
